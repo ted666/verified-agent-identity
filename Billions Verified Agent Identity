@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: cydonia
+        description: ted666
         required: true
-        default: cydonia
-      agent_description:
-        description: cydonia
+        default: ted666
+      agent_description
+        description: ted666
         required: true
-        default: cydonia AI Agent
+        default: ted666 AI Agent
 
 jobs:
   verify:
@@ -38,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "cydonia", "description": "cydonia AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "ted666", "description": "ted666 AI Agent"}'
