@@ -7,7 +7,7 @@ on:
         description: ted666
         required: true
         default: ted666
-      agent_description
+      agent_description:
         description: ted666
         required: true
         default: ted666 AI Agent
