@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: cydonia
+        description: ted666
         required: true
-        default: cydonia
+        default: ted666
       agent_description:
-        description: cydonia
+        description: ted666
         required: true
-        default: cydonia AI Agent
+        default: ted666 AI Agent
 
 jobs:
   verify:
@@ -26,7 +26,7 @@ jobs:
           node-version: '20'
 
       - name: Step 1 - Install ClawHub skill
-        run: npx -y clawhub@latest install verified-agent-identity
+        run: npx clawhub@latest install verified-agent-identity
 
       - name: Install script dependencies
         run: |
@@ -38,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "cydonia", "description": "cydonia AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "ted666", "description": "ted666 AI Agent"}'
